@@ -1,0 +1,36 @@
+%!TEX program = lualatex
+% use \documentclass[fontslocal]{zuydfacilitymanagement} for local fonts. View
+% getting started documentation for more details.
+\documentclass{zuydfacilitymanagement}
+\input{packages}
+\input{metadata}
+\input{cover}
+
+\begin{document}
+  % \makecoverandtitle automatically starts roman numbering, when not using
+  % this command use \frontmatter to start roman numbering
+  \makecoverandtitle
+
+  % include any of your own pages using \include{frontmatter/page}
+  \include{frontmatter/0-voorwoord}
+  \include{frontmatter/1-samenvatting}
+
+  \tableofcontents
+
+  \mainmatter % start arabic numbering
+
+  % include any of your own pages using \include{mainmatter/page}
+  \include{mainmatter/0-inleiding}
+
+  \part{Onderzoek}
+
+  \include{mainmatter/1-stakeholderanalyse}
+
+  \printbibliography
+
+  \appendix
+
+  % include any of your own pages using \include{appendix/page}
+  \include{appendix/bijlage1}
+  \include{appendix/bijlage2}
+\end{document}
