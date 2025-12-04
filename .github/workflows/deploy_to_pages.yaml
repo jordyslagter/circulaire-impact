@@ -33,16 +33,20 @@ jobs:
         with:
           node-version: 20
           cache: "yarn"
+          cache-dependency-path: pitchdeck/yarn.lock
 
       - name: Disable Yarn telemetry
+        working-directory: pitchdeck
         run: |
           yarn config set enableTelemetry 0
           yarn config set --home enableTelemetry 0
 
       - name: Install dependencies
+        working-directory: pitchdeck
         run: yarn install --frozen-lockfile
 
       - name: Build Nuxt (static)
+        working-directory: pitchdeck
         run: yarn generate
 
       - name: Setup Pages
@@ -51,7 +55,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .output/public
+          path: pitchdeck/.output/public
 
       - name: Deploy to GitHub Pages
         id: deployment
