@@ -3,4 +3,11 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss"],
+  nitro: {
+    preset: "github_pages",
+  },
+  app: {
+    baseURL: "/circulaire-impact/",
+    buildAssetsDir: "assets",
+  },
 });
