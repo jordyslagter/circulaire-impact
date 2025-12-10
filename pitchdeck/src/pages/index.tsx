@@ -26,7 +26,8 @@ const Home: FC = () => {
     <>
       <Section
         className={clsx(
-          "bg-gtgreen flex flex-col justify-center content-center items-center text-antiprimary text-center font-bold",
+          "bg-gtgreen flex flex-col justify-center content-center items-center",
+          "text-antiprimary text-center font-bold",
         )}
       >
         <h1 ref={title} className={clsx("text-6xl")}>
