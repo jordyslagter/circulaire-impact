@@ -1,7 +1,7 @@
-name: Deploy Nuxt app to GitHub Pages
+name: Deploy Next app to GitHub Pages
 
 env:
-  NUXT_TELEMETRY_DISABLED: 1
+  NEXT_TELEMETRY_DISABLED: 1
   NODE_ENV: production
 
 on:
@@ -48,9 +48,9 @@ jobs:
         working-directory: pitchdeck
         run: yarn install --frozen-lockfile
 
-      - name: Build Nuxt (static)
+      - name: Build Next (static)
         working-directory: pitchdeck
-        run: yarn generate
+        run: yarn build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -58,7 +58,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: pitchdeck/.output/public
+          path: pitchdeck/out
 
       - name: Deploy to GitHub Pages
         id: deployment
