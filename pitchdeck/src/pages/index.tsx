@@ -2,7 +2,9 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { FC, RefObject, useRef } from "react";
 import Section from "../components/Section";
-import clsx from "clsx";
+import { clsx } from "clsx";
+import { IoChatbubblesOutline } from "react-icons/io5";
+import { IoPeopleCircleOutline } from "react-icons/io5";
 
 const Home: FC = () => {
   const title = useRef(null);
@@ -41,7 +43,8 @@ const Home: FC = () => {
             "h-full bg-gtlightgreen",
           )}
         >
-          <h1 className={clsx("text-4xl text-center")}>Naamsbekendheid</h1>
+          <IoChatbubblesOutline size={90} />
+          <h1 className={clsx("text-4xl text-center mt-5")}>Naamsbekendheid</h1>
         </div>
         <div
           className={clsx(
@@ -71,7 +74,10 @@ const Home: FC = () => {
             "h-full bg-gtlightgreen",
           )}
         >
-          <h1 className={clsx("text-4xl text-center")}>Nieuwe doelgroep</h1>
+          <IoPeopleCircleOutline size={90} />
+          <h1 className={clsx("text-4xl text-center mt-5")}>
+            Nieuwe doelgroep
+          </h1>
         </div>
       </Section>
     </>
