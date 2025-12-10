@@ -62,22 +62,22 @@ const Home: FC = () => {
             "flex flex-col justify-center items-center content-center",
           )}
         >
-          <p className={clsx("w-[90%] max-w-80 text-center")}>
-            Greentom heeft problemen met naamsbekendheid. Het bedrijf heeft het
-            B Corp-certificaat behaald maar is nog altijd nauwelijks bekend in
-            Nederland.
-          </p>
-        </div>
-        <div
-          className={clsx(
-            "flex flex-col justify-center items-center content-center w-full",
-            "h-full bg-gtlightgreen",
-          )}
-        >
           <IoPeopleCircleOutline size={90} />
           <h1 className={clsx("text-4xl text-center mt-5")}>
             Nieuwe doelgroep
           </h1>
+        </div>
+        <div
+          className={clsx(
+            "flex flex-col justify-center items-center content-center",
+            "bg-gtlightgreen w-full h-full",
+          )}
+        >
+          <p className={clsx("w-[90%] max-w-80 text-center")}>
+            Het bedrijf heeft zich tot nu toe vooral gefocust op nieuwe ouders.
+            Met ons idee om in te zetten op een studentenrugzak zal Greentom in
+            een hele nieuwe doelgroep moeten werken.
+          </p>
         </div>
       </Section>
     </>
