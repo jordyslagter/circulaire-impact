@@ -6,9 +6,7 @@ const Document: FC = () => {
     <Html lang="en">
       <Head />
       <body className="bg-antiprimary text-primary">
-        <main>
-          <Main />
-        </main>
+        <Main />
         <NextScript />
       </body>
     </Html>
