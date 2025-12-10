@@ -10,16 +10,9 @@ const Home: FC = () => {
   const title = useRef(null);
   const subTitle = useRef(null);
 
-  const cell1 = useRef(null);
-  const cell2 = useRef(null);
-  const cell3 = useRef(null);
-  const cell4 = useRef(null);
-
   useGSAP(() => {
     gsap.fromTo(title.current, { x: -100 }, { x: 0 });
     gsap.fromTo(subTitle.current, { x: 100 }, { x: 0 });
-
-    gsap.fromTo(cell1.current, { y: -10 }, { y: 0 });
   });
 
   return (
