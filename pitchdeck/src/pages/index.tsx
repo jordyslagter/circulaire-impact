@@ -1,6 +1,6 @@
-import gsap from "gsap";
+import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import { FC, RefObject, useRef } from "react";
+import { FC, useRef } from "react";
 import Section from "../components/Section";
 import { clsx } from "clsx";
 import { IoChatbubblesOutline } from "react-icons/io5";
