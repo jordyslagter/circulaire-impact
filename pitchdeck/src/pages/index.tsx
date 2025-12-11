@@ -5,6 +5,7 @@ import Section from "../components/Section";
 import { clsx } from "clsx";
 import { IoChatbubblesOutline } from "react-icons/io5";
 import { IoPeopleCircleOutline } from "react-icons/io5";
+import ParticlesEffect from "../components/ParticlesEffect";
 
 const Home: FC = () => {
   const title = useRef(null);
@@ -20,15 +21,18 @@ const Home: FC = () => {
       <Section
         className={clsx(
           "bg-gtgreen flex flex-col justify-center content-center items-center",
-          "text-antiprimary text-center font-bold",
+          "text-antiprimary text-center font-bold relative overflow-hidden",
         )}
       >
-        <h1 ref={title} className={clsx("text-6xl")}>
+        <h1 ref={title} className={clsx("text-6xl z-10")}>
           Een rugzak voor de volgende generatie...
         </h1>
-        <h2 ref={subTitle} className={clsx("text-5xl mt-5")}>
+        <h2 ref={subTitle} className={clsx("text-5xl mt-5 z-10")}>
           ...en de generaties daarna
         </h2>
+        <div className="absolute inset-0">
+          <ParticlesEffect />
+        </div>
       </Section>
       <Section className={clsx("grid grid-cols-2 grid-rows-2 items-center")}>
         <div
