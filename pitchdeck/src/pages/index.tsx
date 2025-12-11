@@ -4,6 +4,10 @@ import { Backpack } from "../components/sections/Backpack";
 import { Landing } from "../components/sections/Landing";
 import { Listing } from "../components/sections/Listing";
 
+//TODO: Logos toevoegen aan de landing.
+//TODO: Add section about existing greentom products
+//TODO: Hoe ons idee van een rugzak bij kan dragen aan een circulaire economie.
+
 const Home: FC = () => {
   return (
     <>
