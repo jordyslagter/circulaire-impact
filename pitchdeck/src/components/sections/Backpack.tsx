@@ -58,6 +58,10 @@ const Backpack: FC = () => {
         "flex flex-col content-center items-center justify-center",
       )}
     >
+      <h1 className={clsx("text-4xl font-bold")}>
+        De huidige problemen met rugzakken...
+      </h1>
+      <p className={clsx("mb-20 text-xs")}>Bruls, G. & Slagter, J. (2026)</p>
       <BsBackpack3 size={200} />
       <div
         ref={backpackTextContainer}
