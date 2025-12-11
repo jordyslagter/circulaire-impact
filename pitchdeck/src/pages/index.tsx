@@ -3,8 +3,8 @@ import { useGSAP } from "@gsap/react";
 import { FC, useRef } from "react";
 import Section from "../components/Section";
 import { clsx } from "clsx";
-import { IoChatbubblesOutline } from "react-icons/io5";
-import { IoPeopleCircleOutline } from "react-icons/io5";
+import { IoChatbubblesOutline, IoPeopleCircleOutline } from "react-icons/io5";
+import { BsBackpack3 } from "react-icons/bs";
 import ParticlesEffect from "../components/ParticlesEffect";
 
 const Home: FC = () => {
@@ -20,14 +20,14 @@ const Home: FC = () => {
     <>
       <Section
         className={clsx(
-          "bg-gtgreen flex flex-col justify-center content-center items-center",
-          "text-antiprimary text-center font-bold relative overflow-hidden",
+          "bg-gtgreen flex flex-col content-center items-center justify-center",
+          "text-antiprimary relative overflow-hidden text-center font-bold",
         )}
       >
-        <h1 ref={title} className={clsx("text-6xl z-10")}>
+        <h1 ref={title} className={clsx("z-10 text-6xl")}>
           Een rugzak voor de volgende generatie...
         </h1>
-        <h2 ref={subTitle} className={clsx("text-5xl mt-5 z-10")}>
+        <h2 ref={subTitle} className={clsx("z-10 mt-5 text-5xl")}>
           ...en de generaties daarna
         </h2>
         <div className="absolute inset-0">
@@ -37,16 +37,16 @@ const Home: FC = () => {
       <Section className={clsx("grid grid-cols-2 grid-rows-2 items-center")}>
         <div
           className={clsx(
-            "flex flex-col justify-center items-center content-center w-full",
-            "h-full bg-gtlightgreen",
+            "flex w-full flex-col content-center items-center justify-center",
+            "bg-gtlightgreen h-full",
           )}
         >
           <IoChatbubblesOutline size={90} />
-          <h1 className={clsx("text-4xl text-center mt-5")}>Naamsbekendheid</h1>
+          <h1 className={clsx("mt-5 text-center text-4xl")}>Naamsbekendheid</h1>
         </div>
         <div
           className={clsx(
-            "flex flex-col justify-center items-center content-center",
+            "flex flex-col content-center items-center justify-center",
           )}
         >
           <p className={clsx("w-[90%] max-w-80 text-center")}>
@@ -57,18 +57,18 @@ const Home: FC = () => {
         </div>
         <div
           className={clsx(
-            "flex flex-col justify-center items-center content-center",
+            "flex flex-col content-center items-center justify-center",
           )}
         >
           <IoPeopleCircleOutline size={90} />
-          <h1 className={clsx("text-4xl text-center mt-5")}>
+          <h1 className={clsx("mt-5 text-center text-4xl")}>
             Nieuwe doelgroep
           </h1>
         </div>
         <div
           className={clsx(
-            "flex flex-col justify-center items-center content-center",
-            "bg-gtlightgreen w-full h-full",
+            "flex flex-col content-center items-center justify-center",
+            "bg-gtlightgreen h-full w-full",
           )}
         >
           <p className={clsx("w-[90%] max-w-80 text-center")}>
@@ -77,6 +77,16 @@ const Home: FC = () => {
             een hele nieuwe doelgroep moeten werken.
           </p>
         </div>
+      </Section>
+      <Section
+        className={clsx(
+          "flex flex-col content-center items-center justify-center",
+        )}
+      >
+        <BsBackpack3 size={200} />
+        <p className={clsx("mt-5 text-4xl")}>
+          Zwaar, oncomfortabel, snel kapot, duur, saai
+        </p>
       </Section>
     </>
   );

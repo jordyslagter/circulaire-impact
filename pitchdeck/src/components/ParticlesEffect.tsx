@@ -79,7 +79,7 @@ const ParticlesEffect: FC = () => {
     return (
       <Particles
         id="tsparticles"
-        className="w-full h-full"
+        className="h-full w-full"
         particlesLoaded={particlesLoaded}
         options={options}
       />
