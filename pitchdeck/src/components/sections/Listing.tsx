@@ -41,7 +41,7 @@ export const Listing = () => {
       >
         <p className={clsx("w-[90%] max-w-80 text-center")}>
           Het bedrijf heeft zich tot nu toe vooral gefocust op nieuwe ouders.
-          Met ons idee om in te zetten op een studentenrugzak zal Greentom in
+          Met ons idee om in te zetten op een studentenrugzak zal Greentom met
           een hele nieuwe doelgroep moeten werken.
         </p>
       </div>
