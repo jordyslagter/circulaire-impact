@@ -3,6 +3,7 @@ import { FC } from "react";
 import { Backpack } from "../components/sections/Backpack";
 import { Landing } from "../components/sections/Landing";
 import { Listing } from "../components/sections/Listing";
+import { Products } from "../components/sections/Products";
 
 //TODO: Logos toevoegen aan de landing.
 //TODO: Add section about existing greentom products
@@ -17,6 +18,7 @@ const Home: FC = () => {
       <Landing />
       <Listing />
       <Backpack />
+      <Products />
     </>
   );
 };
