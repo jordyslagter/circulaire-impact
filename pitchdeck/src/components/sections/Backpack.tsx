@@ -3,9 +3,9 @@ import { clsx } from "clsx";
 import { gsap } from "gsap";
 import { FC, useRef } from "react";
 import { BsBackpack3 } from "react-icons/bs";
-import Section from "../Section";
+import { Section } from "../Section";
 
-const Backpack: FC = () => {
+export const Backpack: FC = () => {
   const backpackTextContainer = useRef(null);
   const backpackText1 = useRef(null);
   const backpackText2 = useRef(null);
@@ -76,5 +76,3 @@ const Backpack: FC = () => {
     </Section>
   );
 };
-
-export default Backpack;

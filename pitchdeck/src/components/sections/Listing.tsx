@@ -1,8 +1,8 @@
 import { clsx } from "clsx";
 import { IoChatbubblesOutline, IoPeopleCircleOutline } from "react-icons/io5";
-import Section from "../Section";
+import { Section } from "../Section";
 
-const Listing = () => {
+export const Listing = () => {
   return (
     <Section className={clsx("grid grid-cols-2 grid-rows-2 items-center")}>
       <div
@@ -48,5 +48,3 @@ const Listing = () => {
     </Section>
   );
 };
-
-export default Listing;

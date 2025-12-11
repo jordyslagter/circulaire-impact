@@ -2,10 +2,10 @@ import { useGSAP } from "@gsap/react";
 import { clsx } from "clsx";
 import { gsap } from "gsap";
 import { FC, useRef } from "react";
-import ParticlesEffect from "../ParticlesEffect";
-import Section from "../Section";
+import { ParticlesEffect } from "../ParticlesEffect";
+import { Section } from "../Section";
 
-const Landing: FC = () => {
+export const Landing: FC = () => {
   const title = useRef(null);
   const subTitle = useRef(null);
 
@@ -33,5 +33,3 @@ const Landing: FC = () => {
     </Section>
   );
 };
-
-export default Landing;

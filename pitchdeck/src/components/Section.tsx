@@ -6,12 +6,10 @@ interface Props {
   children?: ReactNode;
 }
 
-const Section: FC<Props> = ({ className, children }) => {
+export const Section: FC<Props> = ({ className, children }) => {
   return (
     <section className={clsx("min-h-screen w-full", className)}>
       {children}
     </section>
   );
 };
-
-export default Section;

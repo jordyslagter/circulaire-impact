@@ -11,7 +11,7 @@ import { FC, useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
-const ParticlesEffect: FC = () => {
+export const ParticlesEffect: FC = () => {
   const [init, setInit] = useState(false);
 
   // this should be run only once per application lifetime
@@ -88,5 +88,3 @@ const ParticlesEffect: FC = () => {
 
   return <></>;
 };
-
-export default ParticlesEffect;
