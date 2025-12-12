@@ -46,7 +46,7 @@ const ProductCard: FC<ProductCardProps> = (props) => {
         className={clsx(
           "grid h-full w-full grid-cols-2 grid-rows-2 rounded border p-5",
           "content-center items-center justify-center justify-items-center",
-          "shadow transition hover:shadow-xl",
+          "text-center shadow transition hover:shadow-xl",
         )}
       >
         <Image src={image.src} alt={image.alt} width={140} height={140} />
@@ -77,10 +77,10 @@ export const Products: FC = () => {
       <ProductCard
         image={{
           src: "https://greentom.com/media/cms/sdd/classic-2017-perspective-grey-blue.png",
-          alt: "Stroller",
+          alt: "Kinderwagen",
         }}
-        title="Stroller"
-        description="Stroller"
+        title="Kinderwagen"
+        description="Greentom's avontuur begon met haar kinderwagen. Deze is gemaakt van geryclede PETflessen."
       />
       <ProductCard
         image={{
@@ -88,7 +88,7 @@ export const Products: FC = () => {
           alt: "Draagzak",
         }}
         title="Draagzak"
-        description="Draagzak"
+        description="In [jaar] heeft Greentom haar draagzak uitgebracht. Het is gefocust op duurzaamheid en comfort. Het is gemaakt van gerycled plastic."
       />
     </Section>
   );
