@@ -11,10 +11,10 @@ interface ParagraphCellProps {
 }
 
 const ParagraphCell: FC<ParagraphCellProps> = (props) => {
-  const { children } = props;
+  const { children, ...rest } = props;
 
   return (
-    <p {...props} className={clsx("w-[90%] max-w-80 text-center")}>
+    <p {...rest} className={clsx("w-[90%] max-w-80 text-center")}>
       {children}
     </p>
   );

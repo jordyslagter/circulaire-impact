@@ -8,10 +8,10 @@ export interface SectionProps {
 }
 
 export const Section: FC<SectionProps> = (props) => {
-  const { className, children } = props;
+  const { className, children, ...rest } = props;
 
   return (
-    <section {...props} className={clsx("min-h-screen w-full", className)}>
+    <section {...rest} className={clsx("min-h-screen w-full", className)}>
       {children}
     </section>
   );
