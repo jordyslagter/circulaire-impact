@@ -1,13 +1,13 @@
 import { clsx } from "clsx";
 import { FC, ReactNode } from "react";
 
-interface Props {
+export interface SectionProps {
   className?: string;
   children?: ReactNode;
   [x: string]: any;
 }
 
-export const Section: FC<Props> = (props) => {
+export const Section: FC<SectionProps> = (props) => {
   const { className, children } = props;
 
   return (
