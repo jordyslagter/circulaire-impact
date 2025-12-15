@@ -1,19 +1,42 @@
 \chapter{Enquête}
-Om erachter te komen wat studenten zoeken in een rugzak is er een enquête uitgevoerd. 
+Om erachter te komen wat studenten zoeken in een rugzak is er een enquête uitgevoerd.
 
 \section{Opzet}
 
 \section{Resultaten}
+
+\begin{figure}[h]
+  \centering
+
+  \begin{tikzpicture}
+    \begin{axis}[
+        xlabel={X},
+        ylabel={Y},
+    ]
+      \addplot table[
+          col sep=semicolon,
+          x=leeftijdscategorie,
+          y=id,
+      ] {resultaten_enquete.csv};
+    \end{axis}
+  \end{tikzpicture}
+\end{figure}
+
 \subsection{Demografie}
-De enquête is beantwoord door 19 mensen. Deze mensen zijn voornamelijkZuyd Hogeschool studenten met een leeftijd tussen de 18 en 23.
-Deze studenten bijna allemaal aan momenteel een rugzak te gebruiken.
-Een groot deel van deze mensen geeft aan tevreden te zijn met hun huidige rugzak, met 73\% van de scores een 8 of hoger.
+De enquête is beantwoord door 19 respondenten. Deze zijn voornamelijk Zuyd
+Hogeschool-studenten met een leeftijd tussen de 18 en 23. De studenten
+gebruiken bijna allemaal momenteel een rugzak. Een groot deel van deze
+geeft aan tevreden te zijn met diens huidige rugzak, met 73\% van de scores een 8
+of hoger.
 
 \subsection{Rugzakkenmerken}
-Uit de data blijkt dat studenten willen dat een rugzak sowieso een laptopvak, waterfleshouder, waterdichtheid, comfort, organisatie, een elektronica vakje, anti-diefstal ritsen en design belangrijk vinden.
-Hie springen een laptopvak, waterdichtheid, comfort en organisatie uit als uitermate belangrijk.
-Verder wordt er ook gesproken over het belang van kwaliteit en een lange levernsduur.
+Uit de data blijkt dat respondenten willen dat een rugzak sowieso een laptopvak,
+waterfleshouder, waterdichtheid, comfort, organisatie, een elektronica vakje,
+anti-diefstal ritsen en design belangrijk vinden. Bovendien blinken een laptopvak,
+waterdichtheid, comfort en organisatie uit als uitermate belangrijk. Verder
+wordt er ook gesproken over het belang van kwaliteit en een lange levensduur.
 
 \subsection{Duurzaamheid}
-Er wordt door studenten niet veel gelet op duurzaamheid bij het kopen van een nieuw product.
-Een derde van de mensen geeft zelfs aan helemaal niet op duurzaamheid te letten.
+Geen enkel van de respondenten geeft aan duurzaamheid ‘heel belangrijk’ te
+vinden bij het kopen van een nieuw product.
+Een derde geeft aan helemaal niet op duurzaamheid te letten.
