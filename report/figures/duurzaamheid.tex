@@ -1,0 +1,11 @@
+\begin{figure}[h]
+  \centering
+
+  \begin{tikzpicture}
+    \csvreader[]{data/enquete_duurzaamheid.csv}{Name = \Name, Quantity = \Quantity}{\Quantity/\Name,}
+    %\pie{data/duurzaamheid_enquete.csv}
+  \end{tikzpicture}
+
+  \caption{Antwoorden op de vraag belang van duurzaamheid}
+  \label{fig:duurzaamheid}
+\end{figure}
