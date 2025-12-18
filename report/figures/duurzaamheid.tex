@@ -2,8 +2,7 @@
   \centering
 
   \begin{tikzpicture}
-    \csvreader[]{data/enquete_duurzaamheid.csv}{Name = \Name, Quantity = \Quantity}{\Quantity/\Name,}
-    %\pie{data/duurzaamheid_enquete.csv}
+    \pie{33.333/{Niet}, 38.888/{Een beetje}, 27.777/{Best wel}}
   \end{tikzpicture}
 
   \caption{Antwoorden op de vraag belang van duurzaamheid}
