@@ -3,7 +3,7 @@ import { FC } from "react";
 
 const Document: FC = () => {
   return (
-    <Html lang="en">
+    <Html lang="nl">
       <Head />
       <body className="bg-antiprimary text-primary">
         <Main />
