@@ -2,6 +2,7 @@ import Head from "next/head";
 import { FC } from "react";
 import { Backpack } from "../components/sections/Backpack";
 import { Idea } from "../components/sections/Idea";
+import { Impact } from "../components/sections/Impact";
 import { Landing } from "../components/sections/Landing";
 import { Listing } from "../components/sections/Listing";
 import { Products } from "../components/sections/Products";
@@ -23,6 +24,7 @@ const Home: FC = () => {
       <Products />
       <Uitdaging />
       <Idea />
+      <Impact />
     </>
   );
 };
