@@ -31,13 +31,17 @@ export const Future = () => {
       </div>
       <div className="flex flex-row content-center items-center justify-center gap-12">
         <Image
-          src={"https://greentom.com/media/greentom_text_logo.png"}
+          src={
+            "https://raw.githubusercontent.com/jordyslagter/circulaire-impact/refs/heads/main/assets/greentom.svg"
+          }
           alt={"Greentom"}
-          width={140}
+          width={240}
           height={140}
         />
         <Image
-          src={"https://bibliotheek.zuyd.nl/mwork/images/zuydlogo.png"}
+          src={
+            "https://raw.githubusercontent.com/jordyslagter/circulaire-impact/refs/heads/main/assets/zuyd.svg"
+          }
           alt={"Zuyd"}
           width={140}
           height={140}
