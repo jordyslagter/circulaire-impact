@@ -1,14 +1,12 @@
 import Head from "next/head";
 import { FC } from "react";
 import { Backpack } from "../components/sections/Backpack";
+import { Beleving } from "../components/sections/Beleving";
 import { Future } from "../components/sections/Future";
 import { Idea } from "../components/sections/Idea";
 import { Impact } from "../components/sections/Impact";
 import { Landing } from "../components/sections/Landing";
 import { Listing } from "../components/sections/Listing";
-import { Products } from "../components/sections/Products";
-import { Uitdaging } from "../components/sections/Uitdaging";
-import { Beleving } from "../components/sections/Beleving";
 
 //TODO: Logos toevoegen aan de landing.
 //TODO: Add section about existing greentom products
@@ -21,10 +19,8 @@ const Home: FC = () => {
         <title>Greentom Pitchdeck</title>
       </Head>
       <Landing />
-      <Listing />
       <Backpack />
-      <Products />
-      <Uitdaging />
+      <Listing />
       <Idea />
       <Beleving />
       <Impact />
