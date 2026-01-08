@@ -8,6 +8,7 @@ import { Landing } from "../components/sections/Landing";
 import { Listing } from "../components/sections/Listing";
 import { Products } from "../components/sections/Products";
 import { Uitdaging } from "../components/sections/Uitdaging";
+import { Beleving } from "../components/sections/Beleving";
 
 //TODO: Logos toevoegen aan de landing.
 //TODO: Add section about existing greentom products
@@ -25,6 +26,7 @@ const Home: FC = () => {
       <Products />
       <Uitdaging />
       <Idea />
+      <Beleving />
       <Impact />
       <Future />
     </>
