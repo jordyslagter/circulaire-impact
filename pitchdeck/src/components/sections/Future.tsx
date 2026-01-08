@@ -1,6 +1,7 @@
 import { clsx } from "clsx";
 import { BsStars } from "react-icons/bs";
 import { Section } from "../Section";
+import Image from "next/image";
 
 export const Future = () => {
   return (
@@ -27,6 +28,10 @@ export const Future = () => {
           Een modulair ontwerp maakt één rugzak geschikt voor vele levens, en
           dat is precies waar circulariteit begint.
         </p>
+      </div>
+      <div className="flex flex-row justify-center content-center items-center">
+        <Image src={"https://greentom.com/media/greentom_text_logo.png"} alt={"Greentom"} width={140} height={140} />
+        <Image src={"https://bibliotheek.zuyd.nl/mwork/images/zuydlogo.png"} alt={"Zuyd"} width={140} height={140} />
       </div>
     </Section>
   );
