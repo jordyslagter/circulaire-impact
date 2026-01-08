@@ -11,7 +11,7 @@ export const Idea: FC = () => {
         "justify-items-center",
       )}
     >
-      <h1 className={clsx("text-4xl")}>Het idee</h1>
+      <h1 className={clsx("text-4xl")}>Onze circulaire kans</h1>
 
       <TbBulbFilled size={200} className={clsx("text-gtgreen mt-12")} />
 

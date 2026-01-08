@@ -11,7 +11,7 @@ export const Future = () => {
         "justify-items-center",
       )}
     >
-      <h1 className={clsx("text-4xl")}>De toekomst</h1>
+      <h1 className={clsx("text-4xl")}>En dan...</h1>
 
       <BsStars size={200} className={clsx("text-gtgreen mt-12")} />
 

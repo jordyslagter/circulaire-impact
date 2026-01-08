@@ -10,7 +10,7 @@ export const Impact = () => {
         "h-[150vh] justify-items-center",
       )}
     >
-      <h1 className={clsx("text-4xl")}>De impact</h1>
+      <h1 className={clsx("text-4xl")}>Wat levert het op?</h1>
 
       <TbSeedingFilled size={200} className={clsx("text-gtgreen mt-12")} />
 

@@ -41,52 +41,66 @@ export const Listing: FC = () => {
   );
 
   return (
-    <Section
-      ref={container}
-      className={clsx("grid grid-cols-2 grid-rows-2 items-center")}
-    >
+    <Section ref={container} className={clsx("flex flex-col")}>
       <div
         className={clsx(
-          "flex w-full flex-col content-center items-center justify-center",
-          "bg-gtlightgreen h-full",
+          "flex w-full content-center items-center justify-center",
+          "justify-items-center",
         )}
       >
-        <IoChatbubblesOutline size={90} />
-        <h1 className={clsx("mt-5 text-center text-4xl")}>Naamsbekendheid</h1>
+        <h1 className={clsx("mb-5 text-4xl")}>Waar zit de frictie?</h1>
       </div>
 
       <div
         className={clsx(
-          "flex flex-col content-center items-center justify-center",
+          "grid h-full w-full grow grid-cols-2 grid-rows-2 items-center",
         )}
       >
-        <ParagraphCell ref={paragraph1}>
-          Greentom heeft problemen met naamsbekendheid. Het bedrijf heeft het B
-          Corp-certificaat behaald maar is nog altijd nauwelijks bekend in
-          Nederland.
-        </ParagraphCell>
-      </div>
+        <div
+          className={clsx(
+            "flex w-full flex-col content-center items-center justify-center",
+            "bg-gtlightgreen h-full",
+          )}
+        >
+          <IoChatbubblesOutline size={90} />
+          <h1 className={clsx("mt-5 text-center text-4xl")}>Naamsbekendheid</h1>
+        </div>
 
-      <div
-        className={clsx(
-          "flex flex-col content-center items-center justify-center",
-        )}
-      >
-        <IoPeopleCircleOutline size={90} />
-        <h1 className={clsx("mt-5 text-center text-4xl")}>Nieuwe doelgroep</h1>
-      </div>
+        <div
+          className={clsx(
+            "flex flex-col content-center items-center justify-center",
+          )}
+        >
+          <ParagraphCell ref={paragraph1}>
+            Greentom heeft problemen met naamsbekendheid. Het bedrijf heeft het
+            B Corp-certificaat behaald maar is nog altijd nauwelijks bekend in
+            Nederland.
+          </ParagraphCell>
+        </div>
 
-      <div
-        className={clsx(
-          "flex flex-col content-center items-center justify-center",
-          "bg-gtlightgreen h-full w-full",
-        )}
-      >
-        <ParagraphCell ref={paragraph2}>
-          Het bedrijf heeft zich tot nu toe vooral gefocust op nieuwe ouders.
-          Met ons idee om in te zetten op een studentenrugzak zal Greentom met
-          een hele nieuwe doelgroep moeten werken.
-        </ParagraphCell>
+        <div
+          className={clsx(
+            "flex flex-col content-center items-center justify-center",
+          )}
+        >
+          <IoPeopleCircleOutline size={90} />
+          <h1 className={clsx("mt-5 text-center text-4xl")}>
+            Nieuwe doelgroep
+          </h1>
+        </div>
+
+        <div
+          className={clsx(
+            "flex flex-col content-center items-center justify-center",
+            "bg-gtlightgreen h-full w-full",
+          )}
+        >
+          <ParagraphCell ref={paragraph2}>
+            Het bedrijf heeft zich tot nu toe vooral gefocust op nieuwe ouders.
+            Met ons idee om in te zetten op een studentenrugzak zal Greentom met
+            een hele nieuwe doelgroep moeten werken.
+          </ParagraphCell>
+        </div>
       </div>
     </Section>
   );
